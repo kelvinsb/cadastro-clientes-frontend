@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Header.css';
 
 const MenuItem = ({
     itemAtivo = 'listar',
@@ -10,12 +11,11 @@ const MenuItem = ({
     children = 'Listar clientes',
     rota = '/'
 }) => {
-
     return (
         <Link
             to={rota}
             className={`navbar-item${itemAtivo === itemAtual ? ' is-active' : ''}`}
-            onClick={() => setarItemAtivo('itemAtual')}
+            onClick={() => setarItemAtivo(itemAtual)}
         >
             { children }
         </Link>
@@ -59,8 +59,8 @@ const Header = () => {
                     <MenuItem
                         itemAtivo={itemAtivo}
                         setarItemAtivo={setItemAtivo}
-                        itemAtual="criar"
-                        rota="/criar"
+                        itemAtual="cadastrar"
+                        rota="/cadastrar"
                     >
                         Cadastrar cliente
                     </MenuItem>

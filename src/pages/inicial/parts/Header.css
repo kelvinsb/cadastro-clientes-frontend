@@ -1,0 +1,19 @@
+.navbar-menu {
+    background: linear-gradient(180deg, #345FCB 0%, #34ABCB 100%);
+}
+.navbar-menu .navbar-item {
+    color: #CCC;
+    transition: 0.5s;
+}
+.navbar-menu .navbar-item:hover,
+.navbar-menu .navbar-item.is-active:hover {
+    color: rgb(238, 238, 238);
+    background: transparent !important;
+    opacity: 0.4;
+}
+.navbar-menu .navbar-item.is-active,
+.navbar-menu .navbar-item:focus {
+    color: #FFF;
+    opacity: 0.8;
+    background: transparent !important;
+}

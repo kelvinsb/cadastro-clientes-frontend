@@ -1,0 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.button {
+    transition: 0.5s;
+}
+.button:hover {
+    opacity: 0.8;
+}
+* {
+    font-family: 'Roboto', sans-serif;
+}
